@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <a id="linkas">Link</a>
+    <p>Mano vardas</p>
+    <p>Labas</p>
+    <p>Ate</p>
+    <p class="name">Programavimas</p>
+    
+    <script>
+        const paragraphDemo = document.getElementById("demo");
+        paragraphDemo.innerHTML = "Roman good programmer";
+        
+        const myLink = document.getElementById("linkas");
+        myLink.href = "https://github.com/blackoutcoder/JSscript-DOM-";
+        myLink.innerHTML = "<div>Git Hub</div>"
+
+        const paragraphs = document.getElementsByTagName("p");
+        for (let i = 0; i < paragraphs.length; i++) {
+            console.log(paragraphs[i]);
+            paragraphs[i].innerText = i + 1 + "Roman";
+        } // Numeracija 
+
+        console.log(paragraphs.length);
+        console.log(paragraphs[paragraphs.length-1]); //paskutinis masyvo elememtas
+
+    </script>
+</body>
+</html>
